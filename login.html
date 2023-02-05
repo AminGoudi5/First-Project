@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        .login {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../IMG/main/login-signup-back.jpg");
+            background-size: cover;
+            width: 100%;
+            height: 1000px;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <nav class="menutop d-grid top-nav-sticky">
+        <!-- login & logout buttons -->
+        <a href="#popup" class="user">
+        </a>
+        <ul class="loginbuttons d-flex">
+            <li><a href="signup.html" class="btn">ثبت نام</a></li>
+            <li><a href="login.html" title="ورود" class="btn">ورود</a></li>
+        </ul>
+        <!-- Logo -->
+        <div class="logo justify-items">
+            <a href="index.html"><img src="IMG/Logo.jpg" alt="logo" class="logo-img"></a>
+        </div>
+        <!-- navbar -->
+        <nav class="navbar">
+            <div class="navbar-container top-nav">
+                <input type="checkbox" name="" id="">
+                <div class="lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+                <ul class="nav">
+                    <li><a href="index.html">صفحه اصلی</a></li>
+                    <li class="dropdown"><a href="error.html"> محصولات
+                        </a>
+                        <ul class="dropdown-menu1">
+                            <li><a href="error.html"> فتوبوک <img src="img/nav/F.B.jpg" alt="آلبوم عکس" class="img1"></a>
+                            </li>
+                            <li><a href="error.html">شاسی عکس <img src="img/nav/Shasi.jpg" alt="عکس بر روی شاسی"></a>
+                            </li>
+                            <li><a href="error.html">عکس پلوراید <img src="img/nav/Plorid.jpeg"
+                                        alt="عکس هایی در ابعاد کوچک"></a></li>
+                            <li><a href="error.html"> قاب عکس <img src="img/nav/Ghab.jpg" alt="قاب عکس"></a></li>
+                            <li><a href="error.html">مگنت<img src="img/nav/Magnet.jpg" alt="عکس های آهن ربایی"></a></li>
+                            <li><a href="error.html">تقویم خاطرات <img src="img/nav/Taghvim.jpg"
+                                        alt="تقویم با عکس دلخواه"></a>
+                            </li>
+                            <li><a href="error.html">چاپ عکس <img src="img/nav/Chap.jpg" alt="چاپ عکس در انواع سایز"></a>
+                            </li>
+                            <li><a href="error.html">ریسه عکس <img src="img/slider/01.jpeg" alt="ریسه پر از عکس"></a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="error.html">عکاسی
+
+                        </a>
+                        <ul class="dropdown-menu2">
+                            <li><a href="error.html">تولد <img src="img/nav/F.B.jpg" alt="آلبوم عکس" class="img1"></a></li>
+                            <li><a href="error.html">عقد <img src="img/nav/Shasi.jpg" alt="عکس بر روی شاسی"></a></li>
+                            <li><a href="error.html">فرمالیته <img src="img/nav/Ghab.jpg" alt="قاب عکس"></a></li>
+                            <li><a href="error.html">فضای باز <img src="img/nav/Magnet.jpg" alt="عکس های آهن ربایی"></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="error.html">وبلاگ</a></li>
+                    <li><a href="contact.html">تماس با ما</a></li>
+                    <li><a href="error.html">درباره ما</a></li>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </nav>
+    <main>
+        <!-- Login -->
+        <section class="login">
+            <div class="form2">
+                <h3>
+                    ورود به حساب کاربری
+                </h3>
+                <br>
+                <form method="post" class="login-form">
+                    <section>
+                        <input type="text" name="username" placeholder="نام کاربری" required>
+                        <input type="password" name="password" placeholder="کلمه عبور" minlength="8" required>
+                        <div class="forget-password">
+                            <a href="error.html">کلمه عبورم را فراموش کرده ام.</a>
+                        </div>
+                    </section>
+                    <div class="captcha">
+                        <input type="checkbox" name="checked" required class="checkbox"><span>I'm not a robot</span>
+                        <div class="captcha-icon"></div>
+                    </div>
+                    <input type="submit" name="submit" value="ورود " required>
+                    <div class="login-to-signup">
+                        <p>اگر حساب کاربری ندارید <a href="signup.html">کلیک</a> کنید</p>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- Third main -->
+    <section class="third-main">
+        <div>
+            <img src="IMG/icon/iconsmall-1.png" alt="">
+            <p> ضمانت کیفیت</p>
+        </div>
+        <div>
+            <img src="IMG/icon/iconsmall-2.png" alt="">
+            <p> ارسال به سراسر کشور </p>
+        </div>
+        <div>
+            <img src="IMG/icon/iconsmall-3.png" alt="">
+            <p> تحویل سریع</p>
+        </div>
+        <div>
+            <img src="IMG/icon/iconsmall-4.png" alt="">
+            <p> پشتیبانی</p>
+        </div>
+        <div>
+            <img src="IMG/icon/iconsmall-5.png" alt="">
+            <p> پرداخت انلاین</p>
+        </div>
+    </section>
+    <!-- footer -->
+    <section class="footer">
+        <div class="khadamat">
+            <ul>
+                <h3>خدمات مشتریان</h3>
+                <li><a href="error.html">راهنمای ثبت سفارش</a></li>
+                <li><a href="error.html">راهنمای سایز چاپ عکس</a></li>
+                <li><a href="error.html">قوانین و مقررات</a></li>
+                <li><a href="error.html">لیست قیمت ها</a></li>
+                <li><a href="contact.html">ارتباط با ما</a></li>
+            </ul>
+        </div>
+        <div class="mahsolat">
+            <ul>
+                <h3>محصولات</h3>
+                <li><a href="error.html">چاپ عکس</a></li>
+                <li><a href="error.html">چاپ عکس روی شاسی</a></li>
+                <li><a href="error.html">ریسه عکس</a></li>
+                <li><a href="error.html">قاب</a></li>
+                <li><a href="error.html">فتوبوک</a></li>
+                <li><a href="error.html">عکس مگنتی</a></li>
+                <li><a href="error.html">عکس پلوراید</a></li>
+                <li><a href="error.html">تقویم خاطرات</a></li>
+            </ul>
+        </div>
+        <div class="time">
+            <h3>ساعات کاری</h3>
+            <p> شنبه تا پنج شنبه از ۱۰ صبح لغایت ۷ شب غیر از <a href="error.html">روزهای تعطیل</a></p>
+            <h3>نشانی</h3>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+        </div>
+        <div class="namad">
+            <h3>نمادها</h3>
+            <div class="img-namad">
+                <div><a href="error.html"><img src="IMG/namad/nemad-e.png" alt=""></a></div>
+                <div><a href="error.html"><img src="IMG/namad/samandehi.png" alt=""></a></div>
+                <div><img src="IMG/namad/senfi.png" alt=""></div>
+            </div>
+        </div>
+    </section>
+    <!-- contact -->
+    <section class="contact">
+        <div class="contact-p">
+            <p><span>©</span> كليه حقوق مادی و معنوی این وبسایت متعلق به کمپانی امین مي باشد
+                و هرگونه کپی برداری از آن پیگرد قانونی دارد </p>
+        </div>
+        <div class="contact-img">
+            <div>
+                <a href="#facebook">
+                    <img src="IMG/icon/facebook.png" alt="">
+                </a>
+            </div>
+            <div>
+                <a href="#telegram">
+                    <img src="IMG/icon/telegram.png" alt="">
+                </a>
+            </div>
+            <div>
+                <a href="#youtube">
+                    <img src="IMG/icon/youtube.png" alt="">
+                </a>
+            </div>
+            <div>
+                <a href="#twitter">
+                    <img src="IMG/icon/twitter.png" alt="">
+                </a>
+            </div>
+            <div>
+                <a href="#instagram">
+                    <img src="IMG/icon/instagram.png" alt="">
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

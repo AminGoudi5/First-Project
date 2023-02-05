@@ -1,0 +1,540 @@
+@font-face {
+  font-family: "yekan";
+  src: url("../font/Yekan.eot");
+  src: url("../font/yekan.woff");
+}
+
+*,
+*::after,
+*::before {
+  font-family: "yekan";
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  direction: rtl;
+  scroll-behavior: smooth;
+}
+
+.back-to-top {
+  position: relative;
+}
+
+::selection {
+  background-color: var(--buttom-color);
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+:root {
+  --buttom-color: #ffd13f;
+  --main-color:
+}
+
+.d-grid {
+  display: grid;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-items {
+  justify-items: center;
+}
+
+/* Go up button */
+.scroll-top {
+  position: absolute;
+  top: 195vh;
+  left: 10px;
+  bottom: 2rem;
+
+}
+
+.scroll-top-link {
+  position: sticky;
+  top: 88vh;
+  text-decoration: none;
+  border-radius: 50%;
+  background-color: blue;
+  padding: 0.5rem;
+  color: white;
+  opacity: 0.3;
+}
+
+.scroll-top-link:hover {
+  opacity: 1;
+}
+
+/* header */
+.menutop {
+  background-image: radial-gradient(#e6e6e6, #a6a6a6);
+  z-index: 1;
+  position: relative;
+  justify-content: space-evenly;
+  align-items: center;
+  grid-template-areas: "logo nav login";
+}
+
+.menutop a {
+  color: #000;
+}
+
+.user {
+  display: none;
+}
+
+/* For signup & login Page */
+.top-nav-sticky {
+  position: sticky;
+  top: 0;
+}
+
+
+/* login */
+.loginbuttons {
+  grid-area: login;
+}
+
+a.btn {
+  display: block;
+  margin: 5px;
+  padding: 0px 24px;
+  text-align: center;
+  color: darkslategrey;
+  font-weight: bold;
+  background-color: lightyellow;
+  border: 5px solid lightgrey;
+  border-radius: 6px;
+  position: relative;
+  top: 0px;
+  box-shadow: 0 4px 2px rgba(0, 0, 0, .5);
+  transition: all 0.3s;
+
+}
+
+a.btn:hover,
+a.btn:focus {
+  background-color: #ffe686;
+  border-color: var(--buttom-color);
+}
+
+a.btn:active {
+  top: 3px;
+  box-shadow: 0 1px 2px darkgray;
+}
+
+/* logo */
+.logo-img {
+  width: 58px;
+  border-radius: 37%;
+  box-shadow: 8px 2px 4px rgba(0, 0, 0, .5);
+}
+
+.logo h2 {
+  display: none;
+}
+
+#popup {
+  display: none;
+  opacity: 0;
+}
+
+#popup:target {
+  display: block;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  animation: autopopup 2s;
+  overflow-x: overlay
+}
+
+@keyframes autopopup {
+  0% {
+    opacity: 0;
+    margin-top: -200px;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* navbar */
+.nav {
+  position: relative;
+}
+
+.nav a {
+  padding: 11px 27px;
+}
+
+.nav>li {
+  display: inline;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, .5);
+}
+
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines {
+  display: none;
+}
+
+
+/* first dropdown & Second dropdown of navbar*/
+.dropdown-menu1,
+.dropdown-menu2 {
+  width: 500px;
+  height: 256px;
+  text-align: right;
+  visibility: hidden;
+  position: absolute;
+  right: 112px;
+  top: 48px;
+  background-image: radial-gradient(#e6e6e6, #a6a6a6);
+  transition: 0.1s ease;
+  transition-delay: 0.1s;
+}
+
+.dropdown-menu2 {
+  right: 260px;
+}
+
+.dropdown-menu1 img,
+.dropdown-menu2 img {
+  position: absolute;
+  right: 138px;
+  top: 0;
+  height: 256px;
+  width: 0%;
+  transition: 0.3s ease-in-out;
+  transition-delay: 0.3s;
+  transition-duration: 0.3s;
+
+}
+
+.dropdown-menu1 .img1,
+.dropdown-menu2 .img1 {
+  width: 75%;
+  transition: none;
+}
+
+.dropdown-menu1 li:hover img,
+.dropdown-menu2 li:hover img {
+  width: 75%;
+}
+
+/* nav Hover */
+.nav li:hover>a {
+  color: var(--buttom-color);
+}
+
+.dropdown:hover .dropdown-menu1,
+.dropdown:hover .dropdown-menu2 {
+  visibility: visible;
+}
+
+.dropdown::after {
+  position: relative;
+  content: "\25BE";
+  left: 26px;
+}
+
+.dropdown:hover::after {
+  content: "\25B4";
+  color: var(--buttom-color);
+}
+
+/* baner(slider) */
+
+.slider-holder {
+  height: 500px;
+}
+
+.slides {
+  height: 100%;
+  display: inline-flex;
+  overflow: hidden;
+}
+
+.slide-item {
+  flex-shrink: 0;
+  width: 100%;
+  animation: 9s linear 1s infinite alternate Amin;
+}
+
+.slide-item img {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes Amin {
+
+  0%,
+  20% {
+    transform: translate(0%);
+  }
+
+  40%,
+  60% {
+    transform: translate(100%);
+  }
+
+  80%,
+  100% {
+    transform: translate(200%);
+  }
+}
+
+/* First main */
+.container {
+  background-color: #eff5f5;
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 5% auto;
+  grid-template-areas: "head head head";
+  gap: 1rem;
+  padding: 0 50px 50px;
+}
+
+.p-header {
+  text-align: center;
+  grid-area: head;
+}
+
+.container div {
+  background-color: #fff;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.container img {
+  width: 100%;
+  height: 60%;
+  border-radius: 5px;
+  padding: 2px 3px;
+  transition: 0.5s;
+}
+
+.container div a {
+  display: inline-block;
+  color: #fff;
+  width: 40%;
+  background-color: var(--buttom-color);
+  margin: 30px 0;
+  box-shadow: 6px 5px 6px rgb(0 0 0 / 50%);
+  position: relative;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+.container div:hover {
+  box-shadow: 0px 5px 6px rgb(0 0 0 / 50%);
+}
+
+.container div:hover img {
+  filter: contrast(80%);
+}
+
+.container div a:hover {
+  background-color: var(--buttom-color);
+}
+
+.container div a:active {
+  top: 3px;
+  box-shadow: 0 2px 4px darkgray;
+}
+
+/* seconde main*/
+.main-back {
+  width: 100%;
+  height: 800px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/IMG/main/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+.p-back {
+  color: #fff;
+  width: 80%;
+  text-align: justify;
+}
+
+
+.p-back h3 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.p-buttom a {
+  display: inline-block;
+  color: #fff;
+  margin-top: 30px;
+  font-size: 25px;
+  width: 200px;
+  background-color: var(--buttom-color);
+  box-shadow: 6px 5px 6px rgb(0 0 0 / 50%);
+  position: relative;
+  border-radius: 5px;
+  border: 1px solid;
+  text-align: center;
+}
+
+.p-buttom a:hover {
+  background-color: #e6b821;
+}
+
+.p-buttom a:active {
+  box-shadow: 0 2px 4px darkgray;
+}
+
+/* third main */
+.third-main {
+  background-color: var(--buttom-color);
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.third-main div {
+  margin: 15px 0;
+  text-align: center;
+}
+
+.third-main div img {
+  transition: 0.5s;
+}
+
+.third-main div:hover img {
+  transform: rotateZ(360deg);
+}
+
+/* footer */
+.footer {
+  border-top: 1px solid;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) auto;
+  justify-items: center;
+}
+
+.footer a {
+  color: rgb(112, 112, 112);
+  font-size: 14px;
+}
+
+
+/* khadamat & mahsokat Hover */
+.khadamat li a:hover,
+.mahsolat li a:hover {
+  color: rgb(247, 38, 38);
+}
+
+.time h3:nth-of-type(2) {
+  border-top: 1px solid #ccc;
+}
+
+.time p {
+  font-size: 14px;
+}
+
+.time a {
+  color: rgb(255, 65, 65);
+}
+
+/* footer > namad */
+.namad {
+  text-align: center;
+}
+
+.namad div {
+  float: right;
+}
+
+.img-namad {
+  margin-top: 30px;
+}
+
+/* contact */
+.contact {
+  border-top: 1px solid #ccc;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contact-p {
+  font-size: 13px;
+}
+
+.contact-p p span {
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.contact-img {
+  display: flex;
+  margin-top: 10px;
+
+}
+
+.contact-img div img {
+  width: 40px;
+  margin-left: 40px;
+}
+
+.contact a:hover img {
+  transform: scale(130%);
+}
+
+
+.error {
+  width: 60%;
+  margin: 100px auto;
+}
+
+.error img {
+  width: 100%;
+}
+
+.error-buttom a {
+  display: inline-block;
+  color: #fff;
+  margin-top: 30px;
+  font-size: 25px;
+  width: 300px;
+  height: 50px;
+  background-color: rgb(238, 77, 37);
+  box-shadow: 6px 5px 6px rgb(0 0 0 / 50%);
+  position: relative;
+  border-radius: 5px;
+  border: 1px solid;
+  text-align: center;
+  right: 35%;
+}
+
+.error-buttom a:hover {
+  background-color: #e6b821;
+}
+
+.error-buttom a:active {
+  box-shadow: 0 2px 4px darkgray;
+}

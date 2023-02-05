@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>چاپ عکس و عکاسی</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <div class="back-to-top"> <!-- Go Up button | this div is for 'back to top' button(scroll-top) -->
+        <!-- header -->
+        <nav class="menutop d-grid">
+            <!-- login & logout buttons -->
+            <a href="#popup" class="user">
+            </a>
+
+            <ul class="loginbuttons d-flex">
+                <li><a href="signup.html" title="ثبت نام" class="btn">ثبت نام</a></li>
+                <li><a href="#popup" class="btn">ورود</a></li>
+            </ul>
+            <!-- Login -->
+            <section class="login" id="popup">
+                <div class="form2">
+                    <h3>
+                        ورود به حساب کاربری
+                    </h3>
+                    <br>
+                    <form method="post" class="login-form">
+                        <section>
+                            <input type="text" name="username" placeholder="نام کاربری" required>
+                            <input type="password" name="password" placeholder="کلمه عبور" minlength="8" required>
+                            <div class="forget-password">
+                                <a href="error.html">کلمه عبورم را فراموش کرده ام.</a>
+                            </div>
+                        </section>
+                        <div class="captcha">
+                            <input type="checkbox" name="checked" required class="checkbox"><span>I'm not a robot</span>
+                            <div class="captcha-icon"></div>
+                        </div>
+                        <input type="submit" name="submit" value="ورود " required>
+                        <div class="login-to-signup">
+                            <p>اگر حساب کاربری ندارید <a href="signup.html">کلیک</a> کنید</p>
+                        </div>
+                        <a href="index.html" class="popup-close">X</a>
+                    </form>
+                </div>
+            </section>
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html"><img src="IMG/Logo.jpg" alt="logo" class="logo-img"></a>
+            </div>
+            <!-- navbar -->
+            <nav class="navbar">
+                <div class="navbar-container top-nav">
+                    <input type="checkbox" name="" id="">
+                    <div class="lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                    </div>
+                    <ul class="nav">
+                        <li><a href="index.html">صفحه اصلی</a></li>
+                        <li class="dropdown"><a href="error.html"> محصولات
+                            </a>
+                            <ul class="dropdown-menu1">
+                                <li><a href="error.html"> فتوبوک <img src="img/nav/F.B.jpg" alt="آلبوم عکس"
+                                            class="img1"></a>
+                                </li>
+                                <li><a href="error.html">شاسی عکس <img src="img/nav/Shasi.jpg" alt="عکس بر روی شاسی"></a>
+                                </li>
+                                <li><a href="error.html">عکس پلوراید <img src="img/nav/Plorid.jpeg"
+                                            alt="عکس هایی در ابعاد کوچک"></a></li>
+                                <li><a href="error.html"> قاب عکس <img src="img/nav/Ghab.jpg" alt="قاب عکس"></a></li>
+                                <li><a href="error.html">مگنت<img src="img/nav/Magnet.jpg" alt="عکس های آهن ربایی"></a></li>
+                                <li><a href="error.html">تقویم خاطرات <img src="img/nav/Taghvim.jpg"
+                                            alt="تقویم با عکس دلخواه"></a>
+                                </li>
+                                <li><a href="error.html">چاپ عکس <img src="img/nav/Chap.jpg"
+                                            alt="چاپ عکس در انواع سایز"></a>
+                                </li>
+                                <li><a href="error.html">ریسه عکس <img src="img/slider/01.jpeg" alt="ریسه پر از عکس"></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="error.html">عکاسی</a>
+                            <ul class="dropdown-menu2">
+                                <li><a href="error.html">تولد <img src="img/nav/F.B.jpg" alt="آلبوم عکس" class="img1"></a>
+                                </li>
+                                <li><a href="error.html">عقد <img src="img/nav/Shasi.jpg" alt="عکس بر روی شاسی"></a></li>
+                                <li><a href="error.html">فرمالیته <img src="img/nav/Ghab.jpg" alt="قاب عکس"></a></li>
+                                <li><a href="error.html">فضای باز <img src="img/nav/Magnet.jpg"
+                                            alt="عکس های آهن ربایی"></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="error.html">وبلاگ</a></li>
+                        <li><a href="contact.html">تماس با ما</a></li>
+                        <li><a href="error.html">درباره ما</a></li>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </nav>
+        <!-- baner -->
+        <section class="slider-holder">
+            <div class="slides">
+                <div class="slide-item">
+                    <img src="IMG/slider/baner.jpg" alt="تبلیغات">
+                </div>
+                <div class="slide-item">
+                    <img src="IMG/slider/01.jpeg" alt="نمونه کار">
+                </div>
+                <div class="slide-item">
+                    <img src="IMG/slider/02.jpg" alt="نمونه کار">
+                </div>
+            </div>
+        </section>
+        <!--First main -->
+        <main>
+            <section class="container">
+                <span class="p-header">
+                    <h2>چاپ عکس روی محصولات متنوع</h2>
+                    <p>چاپ تصاویر به یاد ماندنی با بهترین کیفیت و پایین ترین قیمت</p>
+                </span>
+                <div class="img-1">
+                    <img src="IMG/main/magnet.jpg" alt="">
+                    <h3>چاپ عکس مگنتی</h3>
+                    <p>شروع قیمت از 000 تومان</p>
+                    <a href="error.html"> ثبت سفارش</a>
+                </div>
+                <div class="img-2">
+                    <img src="IMG/main/ghab.jpg" alt="">
+                    <h3>انواع قاب</h3>
+                    <p>شروع قیمت از 000 تومان</p>
+                    <a href="error.html"> ثبت سفارش</a>
+                </div>
+                <div class="img-3">
+                    <img src="IMG/main/shasi.jpg" alt="">
+                    <h3>چاپ عکس روی شاسی</h3>
+                    <p>شروع قیمت از 000 تومان</p>
+                    <a href="error.html"> ثبت سفارش</a>
+                </div>
+                <div class="img-4">
+                    <img src="IMG/main/photobook.jpg" alt="">
+                    <h3>چاپ آلبوم </h3>
+                    <p>شروع قیمت از 000 تومان</p>
+                    <a href="error.html"> ثبت سفارش</a>
+                </div>
+                <div class="img-5">
+                    <img src="IMG/main/polarvid.jpg" alt="">
+                    <h3>چاپ عکس پلوراید</h3>
+                    <p>شروع قیمت از 000 تومان</p>
+                    <a href="error.html"> ثبت سفارش</a>
+                </div>
+                <div class="img-6">
+                    <img src="IMG/main/rise.jpg" alt="">
+                    <h3>چاپ ریسه عکس</h3>
+                    <p>شروع قیمت از 000 تومان</p>
+                    <a href="error.html"> ثبت سفارش</a>
+                </div>
+                <div class="img-7">
+                    <img src="IMG/main/taghvim.jpg" alt="">
+                    <h3>چاپ تقویم </h3>
+                    <p>شروع قیمت از 000 تومان</p>
+                    <a href="error.html"> ثبت سفارش</a>
+                </div>
+                <div class="img-8">
+                    <img src="IMG/main/chap.jpg" alt="">
+                    <h3>چاپ عکس </h3>
+                    <p>شروع قیمت از 000 تومان</p>
+                    <a href="error.html"> ثبت سفارش</a>
+                </div>
+            </section>
+            <!--second main -->
+            <section class="main-back">
+                <div class="p-back">
+                    <h3>ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</h3>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                        چاپگرها
+                        و
+                        متون بلکه روزنامه و مجله در ستون و
+                        سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود
+                        ابزارهای
+                        کاربردی می باشد، کتابهای
+                        زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم
+                        افزارها
+                        شناخ
+                        ت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد
+                        کرد، در
+                        این
+                        ص
+                        ورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و
+                        زمان
+                        مورد
+                        نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد
+                        استفاده
+                        قرار گیرد.
+                        ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
+                        چاپگرها
+                        و
+                        متون بلکه روزنامه و مجله در ستون و
+                        سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود
+                        ابزارهای
+                        کاربردی می باشد، کتابهای
+                        زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم
+                        افزارها
+                        شناخ
+                        ت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد
+                        کرد، در
+                        این
+                        ص
+                        ورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و
+                        زمان
+                        مورد
+                        نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد
+                        استفاده
+                        قرار گیرد.
+                    </p>
+                </div>
+                <div class="p-buttom">
+                    <a href="error.html">ثبت سفارش</a>
+                </div>
+
+            </section>
+            <!-- Third main -->
+            <section class="third-main">
+                <div>
+                    <img src="IMG/icon/iconsmall-1.png" alt="">
+                    <p> ضمانت کیفیت</p>
+                </div>
+                <div>
+                    <img src="IMG/icon/iconsmall-2.png" alt="">
+                    <p> ارسال به سراسر کشور </p>
+                </div>
+                <div>
+                    <img src="IMG/icon/iconsmall-3.png" alt="">
+                    <p> تحویل سریع</p>
+                </div>
+                <div>
+                    <img src="IMG/icon/iconsmall-4.png" alt="">
+                    <p> پشتیبانی</p>
+                </div>
+                <div>
+                    <img src="IMG/icon/iconsmall-5.png" alt="">
+                    <p> پرداخت انلاین</p>
+                </div>
+            </section>
+
+        </main>
+        <!-- footer -->
+        <section class="footer">
+            <div class="khadamat">
+                <h3>خدمات مشتریان</h3>
+
+                <ul>
+                    <li><a href="error.html">راهنمای ثبت سفارش</a></li>
+                    <li><a href="error.html">راهنمای سایز چاپ عکس</a></li>
+                    <li><a href="error.html">قوانین و مقررات</a></li>
+                    <li><a href="error.html">لیست قیمت ها</a></li>
+                    <li><a href="contact.html">ارتباط با ما</a></li>
+                </ul>
+            </div>
+            <div class="mahsolat">
+                <h3>محصولات</h3>
+
+                <ul>
+                    <li><a href="error.html">چاپ عکس</a></li>
+                    <li><a href="error.html">چاپ عکس روی شاسی</a></li>
+                    <li><a href="error.html">ریسه عکس</a></li>
+                    <li><a href="error.html">قاب</a></li>
+                    <li><a href="error.html">فتوبوک</a></li>
+                    <li><a href="error.html">عکس مگنتی</a></li>
+                    <li><a href="error.html">عکس پلوراید</a></li>
+                    <li><a href="error.html">تقویم خاطرات</a></li>
+                </ul>
+            </div>
+            <div class="time">
+                <h3>ساعات کاری</h3>
+                <p> شنبه تا پنج شنبه از ۱۰ صبح لغایت ۷ شب غیر از <a href="error.html">روزهای تعطیل</a></p>
+                <h3>نشانی</h3>
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+            </div>
+            <div class="namad">
+                <h3>نمادها</h3>
+                <div class="img-namad">
+                    <div><a href="error.html"><img src="IMG/namad/nemad-e.png" alt=""></a></div>
+                    <div><a href="error.html"><img src="IMG/namad/samandehi.png" alt=""></a></div>
+                    <div><img src="IMG/namad/senfi.png" alt=""></div>
+                </div>
+            </div>
+        </section>
+        <!-- contact -->
+        <section class="contact">
+            <div class="contact-p">
+                <p><span>©</span> كليه حقوق مادی و معنوی این وبسایت متعلق به کمپانی امین مي باشد
+                    و هرگونه کپی برداری از آن پیگرد قانونی دارد </p>
+            </div>
+            <div class="contact-img">
+                <div>
+                    <a href="#facebook">
+                        <img src="IMG/icon/facebook.png" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="#teitter">
+                        <img src="IMG/icon/twitter.png" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="#youtube">
+                        <img src="IMG/icon/youtube.png" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="#telegram">
+                        <img src="IMG/icon/telegram.png" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="#instagram">
+                        <img src="IMG/icon/instagram.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Go up button -->
+        <div class="scroll-top">
+            <a href="#" class="scroll-top-link">&#11165;</a>
+        </div>
+    </div>
+
+    </main>
+</body>
+
+</html>
